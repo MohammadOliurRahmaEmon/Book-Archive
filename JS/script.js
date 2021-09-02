@@ -6,7 +6,7 @@ const showBooks = () => {
         searchField.value = '';
 
         // Api Load
-        const url = `http://openlibrary.org/search.json?q=${showInput}`
+        const url = `https://openlibrary.org/search.json?q=${showInput}`
         console.log(url);
         fetch(url)
             .then(res => res.json())
